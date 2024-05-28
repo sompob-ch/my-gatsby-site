@@ -63,3 +63,9 @@ You can write GraphQL queries to pull data out of the data layer and into your R
 To pull data into a “building block” component, use the useStaticQuery hook.
 To pull data into a page component, use a page query.
 You can use React components inside the Gatsby Head API.
+
+Data in Gatsby’s GraphQL data layer is stored in nodes.
+Each source plugin creates a different type of node with different fields.
+Transformer plugins create new types of nodes, using data from existing source nodes as a starting point. Transformer plugins don’t actually change the original source nodes.
+gatsby-plugin-mdx is a transformer plugin that lets you use MDX in your site. With MDX, you can create text content with Markdown formatting and embedded React components.
+
